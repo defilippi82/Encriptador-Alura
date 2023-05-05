@@ -44,7 +44,7 @@ footer, .eslogan{
 }
 .rodapie{
 	text-align: center;
-    width: 125px;
+    width: 8em;
     transition: 1s;
 }
 .descripcion,
@@ -84,10 +84,11 @@ label {
 @media screen and (max-width: 480px) {
     .textArea, .muestraTexto, .rodapie, h1{
         width: 90%;
-    }
+        }
 
     .textArea > label, .muestraTexto > label, .container, .descripcion{
         margin: 1em;
+        font-size: 1em;
     }
 
     #boton-desencriptar, #boton-copiar{
@@ -104,6 +105,7 @@ label {
 
     .textArea > label, .muestratexto > label, .container, .descripcion{
         margin: 1em;
+        font-size: 1em;
     }
 
     #boton-desencriptar, #boton-copiar{
