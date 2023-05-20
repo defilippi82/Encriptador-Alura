@@ -3,13 +3,14 @@
 var  ingreseTexto = document.querySelector(".textarea");
 var  mostrarTexto = document.querySelector(".muestratexto");
 
-var  permitido = new RegExp(/^[a-z\s]+$/i);
+var  permitido = new RegExp(/^[a-z\s]+$/i );
+var permitido2 = new RegExp(/[A-Z]/)
 let letras = [];
 let resultado = "";
 
 function generarEncriptado() {
     event.preventDefault();
-    let string = ingreseTexto.value.toLowerCase();
+    let string = ingreseTexto.value;
     if (validarTexto(string) == true) {
         let i = 0;
         encriptar(string);
@@ -26,7 +27,7 @@ function generarEncriptado() {
 }
 
 function generarDesencriptado() {
-    let string = ingreseTexto.value.toLowerCase();
+    let string = ingreseTexto.value;
     if (validarTexto(string) == true) {
         let i = 0;
         desencriptar(string);
@@ -45,7 +46,7 @@ function generarDesencriptado() {
 
 function validarTexto(text) {
     event.preventDefault();
-        if (!permitido.test(text) ) {
+        if (!permitido.test(text) || permitido2.test(text)) {
           mostrarTexto.textContent = "-----Texto Inválido----";
           return false;
         }

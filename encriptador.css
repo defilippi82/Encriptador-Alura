@@ -1,8 +1,6 @@
 body{
 	background: linear-gradient(90deg,white,lightgreen);
-
 }
-
 #alura-logo {
     position: absolute;
     top: 15px;
@@ -17,34 +15,6 @@ h1 {
     text-align: center;
     font-size: 3em;
 }
-              
-              
-.surprise:hover{
-    animation-name: surprise;
-        -webkit-animation-name: surprise;
-        -moz-animation-name: surprise;
-    animation-duration: .8s;
-        -webkit-animation-duration: .8s;
-        -moz-animation-duration: .8s;
-}
-
-    @keyframes surprise
-    {
-        0% {transform: rotate(0deg) scale(1,1);;}
-        10% {transform: rotate(7deg) scale(2,2);}
-        20% {transform: rotate(-7deg) scale(2,2);}
-        30% {transform: rotate(7deg) scale(2,2);}
-        40% {transform: rotate(-7deg) scale(2,2);}
-        50% {transform: rotate(7deg) scale(2,2);}
-        60% {transform: rotate(-7deg) scale(2,2);}
-        70% {transform: rotate(7deg) scale(2,2);}
-        80% {transform: rotate(-7deg) scale(2,2);}
-        90% {transform: rotate(7deg) scale(2,2);}
-        100% {transform: rotate(0deg) scale(1,1);}
-    }
-              
-            
-
 .textarea, .textArea{
 	width: 50%;
     float: left;
@@ -74,14 +44,14 @@ footer, .eslogan{
 }
 .rodapie{
 	text-align: center;
-    width: 125px;
+    width: 8em;
     transition: 1s;
 }
 .descripcion,
 label {
     text-align: center;
     font-family: cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 1em;
    }
 .container {
@@ -109,31 +79,16 @@ label {
     box-shadow: -5px -5px 10px 2px black;
     transition: 500ms;
 }
-#boton-copiar, #boton-borrar{
-  
-    transition: .5s, color .10s;
-    -webkit-transition: .5s, color .10s;
-    -moz-transition: .5s, color .10s;
-}
-#boton-copiar:hover, 
-#boton-borrar:hover{
-    box-shadow: 0 8px 8px 0 #000000,0 8px 8px 0 #000000;
-    transform: translate(0px,5px);
-    -webkit-transform: translate(0px,5px);
-    -moz-transform:translate(0px,5px);
-}
-              
-   
-}
 /* CSS para movil */
 
 @media screen and (max-width: 480px) {
     .textArea, .muestraTexto, .rodapie, h1{
         width: 90%;
-    }
+        }
 
     .textArea > label, .muestraTexto > label, .container, .descripcion{
         margin: 1em;
+        font-size: 1em;
     }
 
     #boton-desencriptar, #boton-copiar{
@@ -150,6 +105,7 @@ label {
 
     .textArea > label, .muestratexto > label, .container, .descripcion{
         margin: 1em;
+        font-size: 1em;
     }
 
     #boton-desencriptar, #boton-copiar{
